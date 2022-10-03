@@ -9,24 +9,8 @@
   background-size: cover;
   height: 600px;
   width: 100%;
-  max-width: 1240px;
   display: flex;
-  margin: 0 auto;
 }
-
-
-@media(max-width:768px){
-
-  .main_wrapper{
-     background-image: linear-gradient(to right, rgba(47, 69, 88, 0.499), rgba(19, 154, 187, 0.876)) , url(../img/pic6.jpg);
-    background-position: top;
-    background-size: cover;
-    height: 800px;
-    width: 100%;
-    max-width: 1240px; 
-    /* margin: 0 auto;   */
-  }
-} 
 
 .image_design{
   background-image: url(../img/pic6.jpg);
@@ -34,22 +18,11 @@
   background-size: cover;
   height: 600px;
   width: 620px;
-  position: relative;
-   /* display: flex;
+  display: flex;
   justify-content: center;
-  align-items: center; */
+  align-items: center; 
 }
 
-@media(max-width:768px){
-  .image_design{
-    background-image: none;
-    background-repeat: none;
-    background-size: none;
-    /* height: 600px;
-    width: 620px;
-    position: relative; */
-  }
-}
 
 .shadow{
   position: absolute;
@@ -62,18 +35,6 @@
   box-shadow: 10px 10px lightblue;
 }
 
-@media(max-width:768px){
-  .shadow{
-    /* position: absolute; 
-    top: 50px;
-    left: 130px; */
-    width: 300px;
-    height: 150px;
-    padding: 15px;
-    background-color: black;
-    box-shadow: 10px 10px lightblue;
-  }
-}
 
 .text{
   font-family: 'Comic Neue';
@@ -95,24 +56,10 @@
 }
 
 
-/* @media(max-width:320px){
-  .main_form{
-    display: none;
-  }
-} */
-
 .sub_form{
-  padding-left: 150px;
+  margin: 0 auto;
 }
 
-@media(max-width:768px){
-  .sub_form{
-    padding-left: none;
-    padding-right: 180px;
-    padding-top: 550px;
-    padding-bottom: 300px;
-  }
-}
  .forms{
   display: block;
   margin-bottom: 15px;
@@ -126,34 +73,12 @@
   font-weight: 400
 } 
 
-  @media(max-width:768px){
-  .forms{
-    display: block;
-    margin-bottom: 5px;
-    margin-top: 3px;
-    width: 300px;
-    height: 30px;
-    border-radius: 15px;
-    font-size: 15px;
-    font-family: 'Comic Neue';
-    font-weight: 400
-  } 
-} 
-
 .label{
   font-size: 20px;
   font-family:'Comic Neue';
   font-weight: 400
 }
 
-@media(max-width:768px){
-  .label{
-    font-size: 30px;
-    font-family:'Comic Neue';
-    font-weight: 400;
-    margin-bottom: 20px;
-  }
-}
 
 ::placeholder {
   padding-left: 10px;
@@ -176,30 +101,37 @@
   transition-duration: 0.4s;
 }
 
-@media(max-width:768px){
-  .btn{
-    font-family: 'Comic Neue';
-    font-weight: bold;
-    font-size: 16px;
-    width: 100px;
-    border-radius: 15px;
-    cursor: pointer;
-    background-color: black;
-    color: #afdcec;
-    transition-duration: 0.4s;
-    margin-top: 15px;
-    height: 25px;
-  }
-}
 
 .btn:hover {
   background-color: white;
   color: black;
 }
 
+
 @media(max-width:768px){
-  .btn:hover {
-    background-color: white;
-    color: black;
+  .main_wrapper{
+    flex-direction: column;
+    gap: 40px;
+    height: 800px;
+  }
+
+  .image_design{
+    background-position: contain;
+
+  }
+
+  .main_form{
+    margin-left: 0;
+  }
+
+  .shadow{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 0;
+  }
+
+  .text{
+    font-size: 55px;
   }
 }
